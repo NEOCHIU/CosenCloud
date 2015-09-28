@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryViewController">
+            <connections>
+                <outlet property="machineDisplay" destination="apu-FK-qK3" id="llD-rc-7Jm"/>
+                <outlet property="utilization" destination="X4W-Wf-cCk" id="6cC-eC-FKc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4W-Wf-cCk">
+                    <rect key="frame" x="100" y="197" width="120" height="120"/>
+                    <color key="backgroundColor" red="1" green="0.66103660599856806" blue="0.15390709726730112" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="稼動率">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="utilizationBtn:" destination="-1" eventType="touchUpInside" id="bR1-mv-3c1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRu-tG-nAP">
+                    <rect key="frame" x="100" y="359" width="120" height="120"/>
+                    <color key="backgroundColor" red="0.9200805329848879" green="0.19249799161017156" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="綠能">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="greenPower:" destination="-1" eventType="touchUpInside" id="U39-lt-C8e"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apu-FK-qK3">
+                    <rect key="frame" x="100" y="40" width="120" height="120"/>
+                    <color key="backgroundColor" red="0.23805859430000001" green="0.75390625" blue="0.14141365880000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="機台監控">
+                        <color key="titleColor" red="0.95187971377566472" green="1" blue="0.91366020565812101" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="machineDisplay:" destination="-1" eventType="touchUpInside" id="Rpq-U5-MrV"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="apu-FK-qK3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="35" id="K42-DU-8oU"/>
+                <constraint firstItem="mRu-tG-nAP" firstAttribute="top" secondItem="X4W-Wf-cCk" secondAttribute="bottom" constant="42" id="Vo9-2R-RMV"/>
+                <constraint firstItem="X4W-Wf-cCk" firstAttribute="top" secondItem="apu-FK-qK3" secondAttribute="bottom" constant="37" id="WPf-Xf-MOF"/>
+            </constraints>
+            <point key="canvasLocation" x="158" y="253"/>
+        </view>
+    </objects>
+</document>

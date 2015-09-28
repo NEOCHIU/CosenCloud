@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Charts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Pods-BarTable.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Pods-CosenCloud.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>44A3FF258015311A89D8AD6FD1C9B86C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C67A282079993236A8354A1CFD3BF7A0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E156EF7F4AD2B4E26E03C43799D2C387</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E82CC40D5021E7ED48D9ACCF7625AEE6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

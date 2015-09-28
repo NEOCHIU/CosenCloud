@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserLoginViewController">
+            <connections>
+                <outlet property="loginBtn" destination="QQR-Mg-DLK" id="2M8-30-pu6"/>
+                <outlet property="userDefSwitch" destination="HJw-5y-i6M" id="xlG-tZ-BId"/>
+                <outlet property="userNameText" destination="mw4-63-LIX" id="gMS-GF-f1F"/>
+                <outlet property="userPwdText" destination="pdd-Qu-lCW" id="K9K-c3-0iy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nz7-Ax-tuC">
+                    <rect key="frame" x="29" y="112" width="264" height="204"/>
+                    <color key="backgroundColor" red="0.49510191169140827" green="0.88508528040573287" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="user" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mw4-63-LIX">
+                    <rect key="frame" x="63" y="147" width="195" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="pwd" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pdd-Qu-lCW">
+                    <rect key="frame" x="63" y="215" width="195" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQR-Mg-DLK">
+                    <rect key="frame" x="74" y="274" width="172" height="30"/>
+                    <color key="backgroundColor" red="0.94117653369999998" green="0.69411766529999996" blue="0.32156863810000003" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="tintColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginBtn:" destination="-1" eventType="touchUpInside" id="Wgu-eY-vPH"/>
+                    </connections>
+                </button>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HJw-5y-i6M">
+                    <rect key="frame" x="63" y="324" width="51" height="31"/>
+                    <connections>
+                        <action selector="userDefSwitch:" destination="-1" eventType="valueChanged" id="bs2-JE-RBD"/>
+                    </connections>
+                </switch>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pdd-Qu-lCW" firstAttribute="top" secondItem="mw4-63-LIX" secondAttribute="bottom" constant="38" id="8Q3-pb-E26"/>
+                <constraint firstItem="QQR-Mg-DLK" firstAttribute="leading" secondItem="HJw-5y-i6M" secondAttribute="trailing" constant="-35" id="Qcc-lh-M1m"/>
+                <constraint firstItem="QQR-Mg-DLK" firstAttribute="top" secondItem="pdd-Qu-lCW" secondAttribute="bottom" constant="29" id="bjs-Nu-oVh"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="317"/>
+        </view>
+    </objects>
+</document>
